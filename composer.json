@@ -1,0 +1,32 @@
+{
+    "name": "svd/tests",
+    "description": "this package developed for tests purposes only",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Evgeny",
+            "email": "svd22286@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "5.5.*",
+        "oomphinc/composer-installers-extender": "*",
+        "bower-asset/bootstrap": "^3.3",
+        "bower-asset/jquery": "^3.1"
+    },
+    "extra": {
+      "installer-types": ["library"],
+      "installer-paths": {
+        "web/{$name}/": ["bower-asset/bootstrap"],
+        "web/assets/{$name}/": ["bower-asset/jquery"]
+      }
+    },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+      }
+    ]
+}

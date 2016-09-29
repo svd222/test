@@ -1,0 +1,11 @@
+#ignore vendor folder
+vendor
+
+#composer.lock
+composer.lock
+
+#web/assets
+web/assets
+
+#web/bootstrap
+web/bootstrap
